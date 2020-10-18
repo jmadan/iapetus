@@ -1,4 +1,4 @@
-service: lambdaportfolio
+service: EquityPortfolioService
 
 provider:
   name: aws
@@ -18,10 +18,10 @@ provider:
       - .git/**
 
 functions:
-  getPortfolios:
+  getEquityPortfolios:
     handler: handler.index
     events:
-      - schedule: cron(0 02 ? * TUE-SAT *)
+      - schedule: cron(0 01 ? * TUE-SAT *)
 
 plugins:
   - serverless-dotenv-plugin

@@ -12,4 +12,16 @@ const getPortfolios = async (token) => {
   return result.data;
 };
 
-module.exports = { getPortfolios };
+const getEquityPortfolios = async (token) => {
+  const config = {
+    method: "get",
+    url: `${process.env.API_URL}/equity/all`,
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  const result = await axios(config);
+  return result.data;
+};
+
+module.exports = { getPortfolios, getEquityPortfolios };

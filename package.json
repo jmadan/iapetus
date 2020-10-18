@@ -1,12 +1,12 @@
 {
-  "name": "portfolio-lambda",
+  "name": "equity_portfolio_function",
   "version": "1.0.0",
-  "description": "pushing portfolios on the queue",
+  "description": "pushing equity portfolios on the queue",
   "main": "handler.js",
   "author": "Jasdeep Madan",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.750.0",
+    "aws-sdk": "^2.769.0",
     "axios": "^0.20.0",
     "rollbar": "^2.19.3"
   },
